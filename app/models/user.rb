@@ -8,4 +8,9 @@ class User < ApplicationRecord
         has_many :comments
 
         validates :name, presence: true, length: { maximum: 6 }
+        validates :profile, presence: true
+        validates :occupation, presence: true
+        validates :position, presence: true
+
+
 end
